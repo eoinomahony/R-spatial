@@ -161,6 +161,9 @@ Ok, so we need to fix this.
 ```{r sf-intersects-setcrs, results='show'}
 st_crs(philly_sf) <- 102003
 ```
+#Line 162 produces the following error in RStudio "Warning message:
+#In CPL_crs_from_input(x) :
+#GDAL Error 1: PROJ: proj_create_from_database: crs not found" Subsequent buffering operation does not work
 
 This warning is ok, we know what we are doing. So now try again:
 
